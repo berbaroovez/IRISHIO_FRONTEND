@@ -1,7 +1,13 @@
 import * as React from "react";
 import { render } from "react-dom";
-import App from "./components/App";
+import App from "./App";
+import GlobalStyles from "./utils/GlobalStyles";
 
 const rootEl = document.getElementById("root");
 
-render(<App />, rootEl);
+render(
+  <>
+    <GlobalStyles /> <App />
+  </>,
+  rootEl,
+);
